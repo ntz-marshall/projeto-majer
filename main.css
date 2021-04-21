@@ -1,22 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Yanone Kaffeesatz', sans-serif;
     background-color: #b7e3cc;
 }
 
 header {
-    background-color: whitesmoke;
-    margin: 30px;
+    width: 75%;
+    height: 54px;
+    font-size: x-large;
+    background-color: rgba(196, 255, 178, 0.603);
+    margin: 50px auto;
     padding: 30px;
     border-radius: 15px;
-    border: 3px solid whitesmoke;
+    border: 3px solid #d6f7;
 }
 
-header ul {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
+header h1 a {
+    text-decoration: none;
 }
 
+.menu {
+    background-color: #c798f3b0;
+    list-style: none;
+    border: 1px solid #c0c0c0;
+    border-radius: 15px;
+    float: right;
+}
+
+.menu li {
+    position: relative;
+    float: left;
+    border-right: 3px solid #7b4b94;
+    border-radius: 15px;
+
+}
+
+.menu li a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+.menu li a:hover {
+    background: #7b4b94;
+    color: #fff;
+    border-radius: 15px;
+    -moz-box-shadow: 0 3px 10px 0 #CCC;
+    -webkit-box-shadow: 0 3px 10px 0 #ccc;
+    text-shadow: 0px 0px 5px #c798f3b0;
+}
+
+.menu li  ul{
+    position:absolute;
+    top:25px;
+    left:0;
+    background-color:#fff;
+    display:none;
+    }
 
 #content {
     margin: auto;
@@ -41,7 +86,7 @@ section {
     margin: 15px;
     padding: 15px;
     background-color: #c4ffb2;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 #showUp2 {
@@ -50,7 +95,7 @@ section {
     margin: 15px;
     padding: 15px;
     background-color: #c4ffb2;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 section article {
@@ -58,7 +103,7 @@ section article {
     margin: 15px;
     padding: 15px;
     background-color: #7b4b94;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
 footer {
